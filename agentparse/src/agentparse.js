@@ -30,7 +30,7 @@ const parseAgent = (useragent) => {
                    agent.includes("trident") ? "Trident" :
                    agent.includes("blink") ? "Blink" : "Unknown";
 
-  return { os, browser, engine, null}
+  return { os, browser, engine }
 };
 
 const userInfo = parseAgent(navigator.userAgent)
